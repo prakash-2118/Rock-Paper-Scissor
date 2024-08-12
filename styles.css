@@ -2,49 +2,67 @@ body {
     background: linear-gradient(to right, #192325, #1da0cc);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
+  
   .title {
-    font-size: 30px;
+    font-size: 2rem; /* 30px */
     font-weight: bold;
+    text-align: center;
+    margin: 1rem 0;
   }
+  
   .move-icon {
-    height: 80px;
-    width: 80px;
+    height: 5rem; /* 80px */
+    width: 5rem; /* 80px */
   }
+  
   .move-button {
     background-color: transparent;
     border-style: solid;
     border-color: white;
-    padding: 30px 35px;
-    border-radius: 90px;
-    margin-right: 15px;
-    border-width: 3px;
-    margin-bottom: 8px;
+    padding: 1.5rem 2rem; /* 30px 35px */
+    border-radius: 130px;
+    margin-right: 1rem; /* 15px */
+    border-width: 0.2rem; /* 3px */
+    margin-bottom: 0.5rem; /* 8px */
     cursor: pointer;
   }
+  
   .reset-button {
-    padding: 8px;
-    margin-top: 8px;
+    padding: 0.5rem; /* 8px */
+    margin-top: 0.5rem; /* 8px */
   }
+  
   .result {
-    font-size: 40px;
+    font-size: 2.5rem; /* 40px */
     font-weight: bold;
+    
+    margin: 1rem 0;
   }
+  
   .both-icons {
-    height: 50px;
+    height: 3.125rem; /* 50px */
   }
-@media (max-width: 600px) {
-  .title {
-    font-size: 24px; /* Adjust title size for smaller screens */
+  
+  /* Responsive styles for mobile screens */
+  @media (max-width: 600px) {
+    .title {
+      font-size: 1.5rem; /* 24px */
+    }
+  
+    .move-button {
+      padding: 1.25rem 1.5rem; /* 20px 25px */
+    }
+  
+    .move-icon {
+      height: 3.75rem; /* 60px */
+      width: 3.75rem; /* 60px */
+    }
+  
+    .result {
+      font-size: 1.875rem; /* 30px */
+    }
   }
-  .move-button {
-    padding: 20px 25px; /* Adjust button padding for smaller screens */
-  }
-  .move-icon {
-    height: 60px; /* Adjust icon size for smaller screens */
-    width: 60px;
-  }
-  .result {
-    font-size: 30px; /* Adjust result font size for smaller screens */
-  }
-}
